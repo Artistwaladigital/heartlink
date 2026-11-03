@@ -1,32 +1,44 @@
 # Production Dockerfile for HEARTLINK (Coolify / VPS Deployment)
-FROM node:20-alpine AS runner
+FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Set production environment
+# Install system dependencies
+RUN apk add --no-cache libc6-compat
+
+# Copy package manifests
+COPY package*.json ./
+
+# Install dependencies (including devDependencies needed for build)
+RUN npm install --legacy-peer-deps
+
+# Copy application code
+COPY . .
+
+# Build Next.js application
+RUN npm run build
+
+# Runner stage
+FROM node:20-alpine AS runner
+WORKDIR /app
+
 ENV NODE_ENV=production
 ENV PORT=3000
 
-# Install dependencies needed for sharp/canvas if any
 RUN apk add --no-cache libc6-compat
 
-# Copy package files
-COPY package*.json ./
+# Create data directory for JSON DB persistence
+RUN mkdir -p /app/data
 
-# Install production dependencies
-RUN npm ci --legacy-peer-deps
+# Copy build artifacts and dependencies from builder
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/public ./public
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/src ./src
 
-# Copy application source
-COPY . .
-
-# Build application
-RUN npm run build
-
-# Expose server port
 EXPOSE 3000
 
-# Volume for data persistence across container redeploys in Coolify
 VOLUME ["/app/data"]
 
-# Start production server
 CMD ["npm", "start"]
