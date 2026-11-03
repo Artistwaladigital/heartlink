@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 11 15 25;
+    --foreground: 248 250 252;
+  }
+
+  body {
+    background-color: #080C16;
+    color: #F8FAFC;
+    font-family: var(--font-sans, system-ui, -apple-system, sans-serif);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0B0F19;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F2E4D;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F43F5E;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(15, 22, 38, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card {
+  background: rgba(20, 30, 51, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.glass-card:hover {
+  border-color: rgba(244, 63, 94, 0.3);
+}
+
+.gradient-rose {
+  background: linear-gradient(135deg, #F43F5E 0%, #BE123C 100%);
+}
+
+.gradient-gold {
+  background: linear-gradient(135deg, #F59E0B 0%, #D97706 100%);
+}
+
+.gradient-dark {
+  background: linear-gradient(180deg, #0B0F19 0%, #060913 100%);
+}
+
+.text-gradient-rose {
+  background: linear-gradient(135deg, #FDA4AF 0%, #F43F5E 50%, #FB7185 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #FDE68A 0%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

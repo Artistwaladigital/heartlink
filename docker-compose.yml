@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  heartlink-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: heartlink-platform
+    restart: always
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+      - JWT_SECRET=heartlink-super-secure-jwt-secret-key-2026
+    volumes:
+      - heartlink-data:/app/data
+
+volumes:
+  heartlink-data:
+    driver: local
