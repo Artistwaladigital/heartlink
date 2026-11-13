@@ -18,6 +18,7 @@ import {
   Bot,
   Flame,
   Search,
+  Smartphone,
 } from 'lucide-react';
 import AIAssistantModal from './AIAssistantModal';
 
@@ -99,6 +100,17 @@ export default function Navbar() {
 
           {/* Action Buttons & Profile Controls */}
           <div className="flex items-center gap-3">
+            {/* Download Android APK Button */}
+            <a
+              href="/letsdate.apk"
+              download
+              className="hidden sm:flex items-center gap-1.5 px-3 py-2 rounded-xl bg-emerald-950/40 hover:bg-emerald-900/50 border border-emerald-500/40 text-emerald-300 text-xs font-medium transition-all"
+              title="Download Android APK"
+            >
+              <Smartphone className="w-4 h-4 text-emerald-400" />
+              <span>Get Android App</span>
+            </a>
+
             {/* AI Cupid Floating Trigger */}
             <button
               onClick={() => setAiModalOpen(true)}

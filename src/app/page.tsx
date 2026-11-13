@@ -16,6 +16,8 @@ import {
   Search,
   Star,
   Compass,
+  Smartphone,
+  Download,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -105,6 +107,15 @@ export default function HomePage() {
               <EyeOff className="w-4 h-4 text-purple-400" />
               <span>Blind Match Pool</span>
             </Link>
+
+            <a
+              href="/letsdate.apk"
+              download
+              className="flex items-center gap-2.5 px-7 py-3.5 rounded-2xl bg-emerald-950/50 hover:bg-emerald-900/60 border border-emerald-500/50 text-emerald-200 text-sm font-semibold transition-all hover:scale-105 shadow-glow-emerald"
+            >
+              <Smartphone className="w-4 h-4 text-emerald-400" />
+              <span>Download Android APK</span>
+            </a>
           </div>
 
           {/* 1-Click Persona Test Switcher Banner */}
