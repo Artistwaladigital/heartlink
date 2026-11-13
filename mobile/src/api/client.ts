@@ -1,8 +1,6 @@
 import { Platform } from 'react-native';
 
-// In Android emulator, localhost is 10.0.2.2. On iOS or Web, localhost is localhost.
-export const BASE_URL =
-  Platform.OS === 'android' ? 'http://10.0.2.2:3000' : 'http://localhost:3000';
+export const BASE_URL = 'https://letsdate.in';
 
 class ApiClient {
   private cookie: string = '';

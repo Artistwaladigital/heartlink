@@ -65,7 +65,7 @@ export default function DatingScreen() {
       {/* Top Header */}
       <View style={styles.header}>
         <View>
-          <Text style={styles.brandTitle}>HEARTLINK</Text>
+          <Text style={styles.brandTitle}>LET&apos;S DATE</Text>
           <Text style={styles.subtitle}>Modern Dating & Discovery</Text>
         </View>
         <View style={styles.badge}>
