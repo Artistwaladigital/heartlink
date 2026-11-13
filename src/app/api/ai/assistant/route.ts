@@ -34,7 +34,7 @@ export async function POST(req: Request) {
     // 1. Blind matchmaking guidance intent
     if (lower.includes('blind') || lower.includes('anonymous')) {
       return NextResponse.json({
-        reply: `Blind Matchmaking is HEARTLINK's signature experience! 💫 In the Blind Pool, your photographs and real identity remain 100% anonymous. We match you purely on values, emotional depth, and personality harmony through an 8-question soulmate quiz.\n\nYou can chat anonymously, and when both of you feel a mutual spark, simply tap "Request Reveal" to unveil each other's profiles!`,
+        reply: `Blind Matchmaking is Let's Date's signature experience! 💫 In the Blind Pool, your photographs and real identity remain 100% anonymous. We match you purely on values, emotional depth, and personality harmony through an 8-question soulmate quiz.\n\nYou can chat anonymously, and when both of you feel a mutual spark, simply tap "Request Reveal" to unveil each other's profiles!`,
         actionSuggestion: {
           label: 'Go to Blind Matchmaking',
           href: '/blind',
@@ -57,7 +57,7 @@ export async function POST(req: Request) {
       tips.push('• Pro-tip: Authentic vulnerability always attracts more genuine matches than generic lists.');
 
       return NextResponse.json({
-        reply: `Here are personalized recommendations to elevate your HeartLink presence:\n\n${tips.join('\n')}`,
+        reply: `Here are personalized recommendations to elevate your Let's Date presence:\n\n${tips.join('\n')}`,
         actionSuggestion: {
           label: 'Edit My Profile',
           href: '/profile',
@@ -87,7 +87,7 @@ export async function POST(req: Request) {
       if (topPicks.length > 0) {
         const names = topPicks.map((p) => `${p.profile.name} (${p.profile.age}, ${p.profile.location.city} — ${p.matchScore}% Match)`).join(', ');
         return NextResponse.json({
-          reply: `I analyzed your preferences: "${message}". I found ${matchResults.length} compatible candidates on HeartLink! Top matches: ${names}. Check out their profiles below:`,
+          reply: `I analyzed your preferences: "${message}". I found ${matchResults.length} compatible candidates on Let's Date! Top matches: ${names}. Check out their profiles below:`,
           recommendedProfiles: topPicks,
           actionSuggestion: {
             label: 'Open Matchmaker',
@@ -99,7 +99,7 @@ export async function POST(req: Request) {
 
     // Default conversational AI response
     return NextResponse.json({
-      reply: `Hello ${user.name}! I am HeartLink Cupid, your AI Matchmaking Concierge. I can help you find compatible partners using natural language, give personalized dating advice, or guide you through our Blind Matchmaking experience.\n\nTry asking me:\n• "Find me someone aged 25 to 30 from Kolkata who wants a serious relationship"\n• "Find an architect or creative mind in New York"\n• "How do I join Blind Matchmaking?"\n• "Give me an icebreaker for my new match"`,
+      reply: `Hello ${user.name}! I am Let's Date Cupid, your AI Matchmaking Concierge. I can help you find compatible partners using natural language, give personalized dating advice, or guide you through our Blind Matchmaking experience.\n\nTry asking me:\n• "Find me someone aged 25 to 30 from Kolkata who wants a serious relationship"\n• "Find an architect or creative mind in New York"\n• "How do I join Blind Matchmaking?"\n• "Give me an icebreaker for my new match"`,
     });
   } catch (err: any) {
     console.error('AI Assistant error:', err);

@@ -1203,7 +1203,7 @@
     }
   ],
   "settings": {
-    "siteName": "HEARTLINK",
+    "siteName": "Let's Date",
     "allowRegistrations": true,
     "requirePhotoVerification": false,
     "prices": {
@@ -1236,6 +1236,6 @@
       "interestsWeight": 0.15,
       "quizWeight": 0.15
     },
-    "announcement": "Welcome to HEARTLINK — Premier International Matchmaking."
+    "announcement": "Welcome to Let's Date — Premier International Matchmaking."
   }
 }

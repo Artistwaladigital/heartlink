@@ -45,7 +45,7 @@ export default function Footer() {
         <div>
           <div className="flex items-center gap-2 mb-3">
             <Heart className="w-4 h-4 text-rose-500 fill-rose-500" />
-            <span className="font-serif tracking-widest font-bold text-sm text-white">HEARTLINK</span>
+            <span className="font-serif tracking-widest font-bold text-sm text-white">LET&apos;S DATE</span>
           </div>
           <p className="text-[11px] text-slate-500 leading-relaxed">
             The premier international platform uniting modern dating, compatibility matchmaking, and anonymous blind connection.
@@ -100,7 +100,7 @@ export default function Footer() {
             New York • London • Kolkata • Mumbai • Paris • Tokyo • San Francisco • Toronto
           </p>
           <div className="mt-4 text-[10px] text-slate-600">
-            © {new Date().getFullYear()} HEARTLINK International. All rights reserved.
+            © {new Date().getFullYear()} Let&apos;s Date International. All rights reserved.
           </div>
         </div>
       </div>

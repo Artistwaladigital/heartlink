@@ -76,7 +76,7 @@ export default function HomePage() {
 
           {/* Subtitle */}
           <p className="mt-6 max-w-2xl text-base sm:text-lg text-slate-300 leading-relaxed font-light">
-            HEARTLINK offers three bespoke pathways to love for adults aged 18+: modern discovery cards,
+            Let&apos;s Date offers three bespoke pathways to love for adults aged 18+: modern discovery cards,
             AI natural-language matchmaking, and anonymous soul-first blind connection.
           </p>
 
@@ -170,7 +170,7 @@ export default function HomePage() {
             </h3>
             <p className="mt-4 text-slate-400 text-sm sm:text-base font-light">
               Whether you prefer visual chemistry, deep compatibility criteria, or pure anonymous connection,
-              HeartLink adapts to you.
+              Let&apos;s Date adapts to you.
             </p>
           </div>
 

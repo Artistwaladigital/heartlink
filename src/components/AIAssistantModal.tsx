@@ -33,7 +33,7 @@ export default function AIAssistantModal({
     {
       id: 'init_1',
       sender: 'bot',
-      text: `Hello! I am HeartLink Cupid, your intelligent matchmaking concierge. 💖\n\nTell me what kind of person you are dreaming of meeting in plain words (e.g. "I want to meet someone aged 25 to 32, educated, family-oriented from Kolkata"), or ask me for profile and icebreaker advice!`,
+      text: `Hello! I am Let's Date Cupid, your intelligent matchmaking concierge. 💖\n\nTell me what kind of person you are dreaming of meeting in plain words (e.g. "I want to meet someone aged 25 to 32, educated, family-oriented from Kolkata"), or ask me for profile and icebreaker advice!`,
     },
   ]);
   const [input, setInput] = useState('');
@@ -106,7 +106,7 @@ export default function AIAssistantModal({
             </div>
             <div>
               <h3 className="text-base font-bold text-white flex items-center gap-2">
-                HeartLink Cupid
+                Let&apos;s Date Cupid
                 <span className="text-[10px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30 font-semibold">
                   NLP AI
                 </span>

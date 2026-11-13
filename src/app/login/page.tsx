@@ -52,7 +52,7 @@ export default function LoginPage() {
           </div>
         </div>
         <h1 className="font-serif text-3xl font-bold text-white tracking-wide">
-          Welcome to HEARTLINK
+          Welcome to Let&apos;s Date
         </h1>
         <p className="text-xs text-slate-400 mt-1">
           Sign in to your private dating & matchmaking account
@@ -180,7 +180,7 @@ export default function LoginPage() {
         <div className="mt-6 text-center text-xs text-slate-400">
           Don&apos;t have an account?{' '}
           <Link href="/register" className="text-rose-400 hover:text-rose-300 font-semibold underline">
-            Join HeartLink (18+)
+            Join Let&apos;s Date (18+)
           </Link>
         </div>
       </div>

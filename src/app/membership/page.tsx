@@ -305,7 +305,7 @@ export default function MembershipPage() {
                   }}
                   className="w-full py-3 rounded-xl gradient-rose text-white text-xs font-bold shadow-glow-rose"
                 >
-                  Continue to HeartLink
+                  Continue to Let&apos;s Date
                 </button>
               </div>
             ) : (

@@ -38,7 +38,7 @@ if (!fs.existsSync(DATA_DIR)) {
 
 function getDefaultSettings(): AdminSettings {
   return {
-    siteName: 'HEARTLINK',
+    siteName: "Let's Date",
     allowRegistrations: true,
     requirePhotoVerification: false,
     prices: {
@@ -59,7 +59,7 @@ function getDefaultSettings(): AdminSettings {
       interestsWeight: 0.15,
       quizWeight: 0.15,
     },
-    announcement: 'Welcome to HEARTLINK — Where authentic hearts connect globally.',
+    announcement: "Welcome to Let's Date — Where authentic hearts connect globally.",
   };
 }
 
@@ -77,7 +77,7 @@ function getInitialDemoData(): DatabaseSchema {
       membershipExpiresAt: null,
       verified: true,
       status: 'ACTIVE',
-      name: 'HeartLink Concierge',
+      name: "Let's Date Concierge",
       age: 33,
       dateOfBirth: '1993-04-12',
       gender: 'WOMAN',
@@ -88,7 +88,7 @@ function getInitialDemoData(): DatabaseSchema {
         'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=800&q=80',
       ],
       photoStatus: 'APPROVED',
-      bio: 'Executive Director of Member Experiences at HeartLink. Passionate about intentional love.',
+      bio: "Executive Director of Member Experiences at Let's Date. Passionate about intentional love.",
       profession: 'Platform Curator',
       education: 'Columbia University',
       interests: ['Psychology', 'Fine Arts', 'Travel', 'Jazz', 'Architecture'],

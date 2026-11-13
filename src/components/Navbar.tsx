@@ -53,8 +53,8 @@ export default function Navbar() {
               </div>
             </div>
             <div className="flex flex-col">
-              <span className="font-serif tracking-[0.25em] text-xl font-bold text-gradient-rose">
-                HEARTLINK
+              <span className="font-serif tracking-[0.2em] text-xl font-bold text-gradient-rose">
+                LET&apos;S DATE
               </span>
               <span className="text-[10px] uppercase tracking-widest text-slate-400 font-medium">
                 Intentional Intimacy
@@ -226,7 +226,7 @@ export default function Navbar() {
                   href="/register"
                   className="px-4 py-2 rounded-xl gradient-rose text-white text-xs font-semibold shadow-glow-rose hover:opacity-95 transition"
                 >
-                  Join HeartLink
+                  Join Let&apos;s Date
                 </Link>
               </div>
             )}

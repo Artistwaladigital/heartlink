@@ -33,3 +33,5 @@ mobile/web-build/
 
 # Temporary files
 *.tmp*
+tsconfig.tsbuildinfo
+scripts/

@@ -18,7 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: 'HEARTLINK | Premium Dating, Matchmaking & Blind Matchmaking',
+  title: "Let's Date | Premium Dating, Matchmaking & Blind Matchmaking",
   description:
     'Experience international dating, AI compatibility matchmaking, and soul-first anonymous blind matchmaking with mutual consent reveal.',
   manifest: '/manifest.json',

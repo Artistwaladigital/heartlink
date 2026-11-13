@@ -44,7 +44,7 @@ export default function RegisterPage() {
     setError(null);
 
     if (isUnderage) {
-      setError('Strict Age Policy: HEARTLINK is exclusively for adults aged 18 and above.');
+      setError('Strict Age Policy: Let\'s Date is exclusively for adults aged 18 and above.');
       return;
     }
 
@@ -91,7 +91,7 @@ export default function RegisterPage() {
           <span>Strict 18+ Verified Platform</span>
         </div>
         <h1 className="font-serif text-3xl font-bold text-white tracking-wide">
-          Join HEARTLINK
+          Join Let&apos;s Date
         </h1>
         <p className="text-xs text-slate-400 mt-1">
           Begin your journey across Dating, Matchmaking & Blind Connection
@@ -110,7 +110,7 @@ export default function RegisterPage() {
           <div className="mb-4 p-3 rounded-xl bg-rose-600/30 border border-rose-500 text-rose-200 text-xs font-semibold flex items-center gap-2">
             <AlertCircle className="w-4 h-4 shrink-0 text-rose-300" />
             <span>
-              Underage Warning: Calculated age is {currentAge}. HEARTLINK requires members to be at least 18 years old.
+              Underage Warning: Calculated age is {currentAge}. Let&apos;s Date requires members to be at least 18 years old.
             </span>
           </div>
         )}

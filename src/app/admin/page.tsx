@@ -155,7 +155,7 @@ export default function AdminPage() {
           <div className="flex items-center gap-2">
             <h1 className="font-serif text-2xl sm:text-3xl font-bold text-white flex items-center gap-2">
               <ShieldCheck className="w-7 h-7 text-amber-400" />
-              HEARTLINK Admin Console
+              Let&apos;s Date Admin Console
             </h1>
             <span className="text-xs font-bold px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/40">
               Superadmin
